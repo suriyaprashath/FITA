@@ -1,0 +1,36 @@
+/* Global styles */
+.section {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #26a69a;
+  height: 300px;
+  overflow: auto;
+}
+
+body {
+  padding: 10px;
+  margin: 0px;
+  background-color: #9e9e9e;
+}
+
+/* Section 1 */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #aed581;
+  display: inline-block;
+}
+
+.demo {
+  background-color: #ffca28;
+  position: sticky;
+  top: 10px;
+}
+
+.parent {
+  background-color: #ef9a9a;
+  height: 300px;
+  position: relative;
+  top: 30px;
+  overflow: auto;
+}

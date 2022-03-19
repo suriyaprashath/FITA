@@ -1,0 +1,43 @@
+/* Global styles */
+.section {
+  border: 2px solid black;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Section 1 */
+.section-1 .image {
+  float: left;
+  margin: 10px;
+}
+
+.section-1 .right {
+  float: right;
+}
+
+.section-1 .content {
+  clear: both;
+}
+
+/* Section 2 */
+.col-layout {
+  background-color: aqua;
+}
+
+.col {
+  float: left;
+  width: 30%;
+  margin: 0px 10px;
+}
+
+/* Section 3 */
+.section-3 .image {
+  float: left;
+  margin: 10px;
+}

@@ -1,0 +1,27 @@
+/* Global styles */
+.section {
+  border: 2px solid black;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+/* Section 1 */
+.inline, .block {
+  background-color: #90caf9;
+}
+
+.inline {
+  width: 50%;
+  height: 100px;
+}
+
+.inline-block {
+  background-color: #80cbc4;
+  display: inline-block;
+  width: 50%;
+  height: 100px;
+}
+
+.block {
+  display: none;
+}

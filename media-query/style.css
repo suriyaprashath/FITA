@@ -1,0 +1,35 @@
+/* Global styles */
+.section {
+  border: 2px solid black;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+/* Section 1 */
+.card {
+  padding: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 30px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  .card-ctr {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media print and (orientation: portrait) {
+  .card p {
+    color: red !important;
+  }
+}
+
+@media print {
+  .card p {
+    font-size: 24px;
+    color: blue;
+  }
+}

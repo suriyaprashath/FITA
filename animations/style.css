@@ -1,0 +1,48 @@
+/* Global styles */
+.section {
+  border: 2px solid black;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+/* Section 1 */
+.content {
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+  /* animation-iteration-count: 2; */
+  /* animation-direction: alternate; */
+  left: 0px;
+  /* font-size: initial;
+  color: green; */
+  /* transition: font-size 2s ease-in, color 5s linear; */
+}
+
+/* .content.animate {
+  font-size: 60px;
+  color: blue;
+} */
+
+@keyframes slideIn {
+  from {
+    left: 100px;
+    color: green;
+    top: 0px;
+    font-size: initial;
+  }
+  
+  50% {
+    top: 250px;
+    font-size: 60px;
+  }
+
+  to {
+    left: 200px;
+    color: blue;
+    top: 0px;
+    font-size: initial;
+  }
+}
