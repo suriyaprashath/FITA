@@ -1,0 +1,96 @@
+/* Global styles */
+.section {
+  border: 2px solid black;
+  margin: 10px 0px;
+  padding: 10px;
+  height: 90vh;
+}
+
+/* Section 1 */
+.section-1 .grid {
+  background-color: #000;
+  gap: 10px;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(100px, 250px));
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+}
+
+.section-1 .grid-item {
+  background-color: rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.section-1 .grid-item.wide {
+  grid-column-end: span 2;
+}
+
+.section-1 .grid-item img {
+  max-height: 100%;
+  max-width: 100%;;
+}
+
+/* Section 2 */
+.section-2 .grid {
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+  "header header header header"
+  "left content content right"
+  "left content content right"
+  "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 1fr 100px;
+}
+
+.section-2 .grid-item {
+  background-color: #b3e5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-2 .header {
+  grid-area: header;
+}
+.section-2 .footer {
+  grid-area: footer;
+}
+.section-2 .left-side {
+  grid-area: left;
+}
+.section-2 .content {
+  grid-area: content;
+}
+.section-2 .right-side {
+  grid-area: right;
+}
+
+/* Section 3 */
+.section-3 .grid {
+  display: grid;
+  gap: 10px;
+  /* grid-auto-flow: column; */
+  background-color: #ef9a9a;
+  height: 100%;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 100px);
+  align-content: space-around;
+  justify-content: center;
+}
+
+.section-3 .grid-item {
+  background-color: #ffcc80;
+}
+
+.section-3 .four {
+  /* align-self: center;
+  justify-self: flex-start; */
+}

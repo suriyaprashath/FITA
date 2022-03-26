@@ -1,0 +1,36 @@
+/* Global styles */
+.section {
+  border: 2px solid black;
+  margin: 10px 0px;
+  padding: 10px;
+  height: 90vh;
+}
+
+/* Section 1 */
+.flex {
+  display: flex;
+  gap: 50px 20px;
+  height: 100%;
+  background-color: #ef9a9a;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.flex .item {
+  background-color: #f44336;
+  /* flex-grow: 1; */
+  flex-basis: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .flex .four {
+  flex-shrink: 23;
+}
+
+.flex .one {
+  flex-basis: 300px;
+  flex-shrink: 0;
+} */
