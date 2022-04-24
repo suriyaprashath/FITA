@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+
+    <style>
+      div {
+        margin: 1rem;
+      }
+
+      label {
+        display: inline-block;
+        width: 20%;
+      }
+
+      p {
+        font-weight: bold;
+      }
+
+      input:invalid,
+      textarea:invalid {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="google.com/" method="post">
+      <input type="hidden" value="Secret Text" />
+      <div>
+        <label
+          for="username"
+          id="username-label"
+          style="font-weight: bold; color: green"
+          >Username</label
+        >
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          title="This will be your username in the app"
+          required
+          minlength="4"
+          maxlength="15"
+          name="username"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          required
+          minlength="8"
+          maxlength="15"
+          name="password"
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" name="email" />
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <span>18</span>
+        <input
+          type="range"
+          name=""
+          id="age"
+          value="18"
+          min="18"
+          max="40"
+          name="age"
+        />
+        <span>40</span>
+      </div>
+      <div>
+        <p>Gender</p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male" checked />
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+      </div>
+      <div>
+        <p>Favourite Icecreams</p>
+
+        <label for="vanilla">Vanilla</label>
+        <input type="checkbox" id="vanilla" value="vanilla" name="icecreams" />
+
+        <label for="chocolate">Chocolate</label>
+        <input
+          type="checkbox"
+          id="chocolate"
+          value="chocolate"
+          checked
+          name="icecreams"
+        />
+      </div>
+      <div>
+        <label for="profile">Profile picture</label>
+        <input
+          type="file"
+          id="profile"
+          title="This will be your profile picture"
+          name="profile"
+        />
+      </div>
+      <div>
+        <label for="comments">Comments</label>
+        <textarea
+          name=""
+          id="comments"
+          cols="20"
+          rows="10"
+          name="comments"
+        ></textarea>
+      </div>
+      <div>
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
