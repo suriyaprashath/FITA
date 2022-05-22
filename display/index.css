@@ -1,0 +1,63 @@
+.section {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 20px 0px;
+}
+
+/* Section 1 */
+
+.section-1 p {
+  display: inline-block;
+  background-color: green;
+  height: 50px;
+  width: 100px;
+}
+
+.section-1 span {
+  background-color: blue;
+  height: 50px;
+  width: 100px;
+}
+
+/* Section 2 */
+
+.section-2 {
+  height: 800px;
+  box-sizing: border-box;
+}
+
+.section-2 .heading {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.card {
+  background-color: #80deea;
+  height: 200px;
+  /* width: 300px; */
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.card .title {
+  height: 50px;
+  border-bottom: 2px solid white;
+  margin: 0px;
+}
+
+.card .content {
+  box-sizing: border-box;
+  height: calc(100% - 52px);
+  padding: 20px;
+  margin: 0px;
+}
+
+.card-ctr {
+  background-color: #c5e1a5;
+  height: calc(100% - 80px);
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
