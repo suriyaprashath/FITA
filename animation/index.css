@@ -1,0 +1,51 @@
+body {
+  margin:20px;
+}
+
+.parent {
+  background-color: #3f51b5;
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+
+.child {
+  align-items: center;
+  border: 1px solid black;
+  background-color: #9fa8da;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+}
+
+.custom {
+  background-color: red;
+  color: white;
+  position: absolute;
+  animation-name: upDown;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+
+@keyframes upDown {
+  0% {
+    background-color: #0277bd;
+    top: 0px;
+    left: 0px;
+    border-radius: 0%;
+  }
+  50% {
+    top: 400px;
+    background-color: #ff6f00;
+  }
+  100% {
+    border-radius: 50%;
+    background-color: #ff8a65;
+    top: 400px;
+    left: 400px;
+  }
+}
