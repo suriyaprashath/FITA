@@ -1,62 +1,75 @@
-// Functions
-
 function add(a, b) {
-  const result = a + b;
+  var total = a + b;
 
-  return result;
+  return total;
 }
 
-const addArrowFn = (a, b) => {
-  const result = a + b;
+var sum = add(5, 6);
+console.log(sum);
 
-  return result;
+var a = 10; // Global scope
+var arrFnAdd = (b) => {
+  var total = a + b; // Local or Function scope
+
+  if (b < 50) {
+    var c = 100; // Block scope
+  }
+
+  return total + c;
 };
 
-var total = addArrowFn(5, 6);
+var arrFnSum = arrFnAdd(20);
+console.log(arrFnSum);
 
-console.log(total);
+// Hoisting
+function hoistExample() {
+  // var value;
+  console.log(value);
 
-// Scopes
-var message = 'Welcome';
-
-function greet() {
-  var name = 'John';
-  let age = 18;
-
-  function isAdult() {
-    age = 16;
-    if (age >= 18) {
-      let category = 'adult';
-      console.log(message, name, category);
-    } else {
-      let category = 'teen';
-      console.log(message, name, category);
-    }
-  }
-
-  isAdult();
-
-  console.log(age);
-
-  console.log('Inside greet: ', name);
+  // value = 10;
+  var value = 10;
+  console.log(value);
 }
 
-greet();
+hoistExample();
 
-console.log('Outside greet: ', name);
-console.log(message);
+// Global variable leaks
+function leak() {
+  var a = 20;
+  console.log('Leak: ', a);
+}
+
+function leakImpact() {
+  console.log('Impact: ', a);
+}
+
+leak();
+leakImpact();
 
 // Closures
-function addition() {
-  let a = 10;
-  
-  var add = function(b) {
-    console.log(a+b);
-  }
+function multiply(b) {
+  var a = 30;
 
-  return add;
+  return function doMultiply() {
+    console.log('Multiplication result: ', a * b);
+  };
 }
 
-var findTotal = addition();
+let multiplyOperation = multiply(5);
 
-findTotal(5);
+multiplyOperation();
+
+for (var i = 0; i < 5; i++) {
+  (function (i) {
+    console.log('Before settimeout: ', i);
+    setTimeout(function () {
+      console.log('Iteration value: ', i);
+    }, 1000);
+  })(i);
+}
+
+for (let i = 0; i < 5; i++) {
+  setTimeout(function () {
+    console.log('Iteration value: ', i);
+  }, 1000);
+}
