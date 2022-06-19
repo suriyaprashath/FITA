@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Recap</title>
+
+    <style>
+      p {
+        border: 1px solid black;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <p style="color: red">Including Styles in different ways</p>
+    <p id="id-selector">I am selecting this using id</p>
+    <p class="green">I am selecting this using class</p>
+    <p class="green">I am selecting this also using class</p>
+
+    <div>This is a division</div>
+
+    <div class="parent">
+      <p class="child">First child</p>
+      <p class="child">Second child</p>
+      <p class="child">Third child</p>
+      <p class="child">Fourth child</p>
+      <div class="footer">
+        <p>This is the footer</p>
+      </div>
+    </div>
+
+    <p class="underline">This is a normal paragraph</p>
+
+    <!-- Display -->
+    <span class="hide">This is an inline element</span>
+
+    <div class="card-ctr">
+      <div class="card">
+        <h1>Card heading</h1>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="card large">
+        <h1>Card heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque
+          atque similique tenetur numquam, deserunt cupiditate error dicta
+          soluta corporis nostrum reiciendis expedita labore corrupti rerum
+          itaque harum minus est.
+        </p>
+      </div>
+      <div class="card">
+        <h1>Card heading</h1>
+        <p>Lorem ipsum</p>
+      </div>
+    </div>
+  </body>
+</html>

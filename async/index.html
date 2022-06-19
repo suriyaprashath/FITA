@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Js</title>
+
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <button onclick="runLoop()">Run for loop!!!</button>
+    <button onclick="logClick()">Click Me!!!</button>
+
+    <button id="xhr">Click to start request</button>
+    <button id="promise" onclick="delay()">Click to start request in promise</button>
+    <button id="await" onclick="delayAsync()">Click to start request in await</button>
+    <button id="reload">Reload</button>
+
+    <pre readonly class="event-log"></pre>
+  </body>
+</html>
